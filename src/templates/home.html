@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+        body {
+            background-color: black;
+            color: #1CF755FF;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Fira Code', monospace;
+        }
+        input {
+            border-radius: 5px;
+            width: 190px;
+            height: 20px;
+            border-color: none;
+        }
+        button {
+            border-radius: 5px;
+            background-color: aquamarine;
+            cursor:  pointer;
+            width: 50px;
+            height: 30px;
+        }
+        button:hover {
+            width: 80px;
+            height: 50px;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo de adivinhação</h1>
+        <p>Comece por digitar um número</p>
+        <form action="{{ url_for('home') }}" method="post">
+            <label for="">Número: </label>
+            <input type="text" placeholder="Digite um número, entre 0 e 10." name="input">
+            <button>Enviar</button>
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -12,7 +12,7 @@ def home():
         print(pc)
         if pc == palpite:
             return f"""<body style="Background-color: black; text-aligm: center; justify-content: center; aligm-items: center;">
-                            <p style="background-color: black; color: green;">Você ganhour, o valor era {pc}.</p>
+                            <p style="background-color: black; color: green;">Você ganhou, o valor era {pc}.</p>
                         </body>"""
         else:
             return f"""<body style="Background-color: black; text-aligm: center; justify-content: center; aligm-items: center;">
